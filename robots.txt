@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aderamlidsar-design.github.io/freakside/sitemap.xml
