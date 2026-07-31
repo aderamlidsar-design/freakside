@@ -3,7 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FREAKSIDE</title>
+<title>FREAKSIDE — Local Brand International Quality</title>
+<meta name="description" content="FREAKSIDE — brand fashion streetwear lokal. Koleksi kaos, kemeja, hoodie, jaket, celana, topi, tas, dan aksesoris. Belanja lewat Shopee, Tokopedia, TikTok Shop, atau hubungi kami langsung via WhatsApp.">
+<meta name="keywords" content="freakside, streetwear lokal, fashion pria, kaos distro, hoodie lokal, jaket lokal, brand lokal indonesia">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aderamlidsar-design.github.io/freakside/">
+
+<!-- Open Graph: tampilan saat link dibagikan ke WhatsApp / Instagram / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FREAKSIDE">
+<meta property="og:title" content="FREAKSIDE — Local Brand International Quality">
+<meta property="og:description" content="Koleksi streetwear lokal FREAKSIDE: kaos, kemeja, hoodie, jaket, celana, topi, tas, dan aksesoris. Hubungi kami langsung via WhatsApp.">
+<meta property="og:image" content="https://aderamlidsar-design.github.io/freakside/img/og-cover.jpg">
+<meta property="og:url" content="https://aderamlidsar-design.github.io/freakside/">
+<meta property="og:locale" content="id_ID">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FREAKSIDE — Local Brand International Quality">
+<meta name="twitter:description" content="Koleksi streetwear lokal FREAKSIDE: kaos, kemeja, hoodie, jaket, celana, topi, tas, dan aksesoris.">
+<meta name="twitter:image" content="https://aderamlidsar-design.github.io/freakside/img/og-cover.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "FREAKSIDE",
+  "description": "Brand fashion streetwear lokal — kaos, kemeja, hoodie, jaket, celana, topi, tas, dan aksesoris.",
+  "url": "https://aderamlidsar-design.github.io/freakside/",
+  "image": "https://aderamlidsar-design.github.io/freakside/img/og-cover.jpg",
+  "priceRange": "Rp35.000 - Rp599.000"
+}
+</script>
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -136,7 +169,7 @@
   }
   .fold-panel .p1 .p1-label{
     font-family:'Space Grotesk',sans-serif;font-weight:700;
-    font-size:clamp(2.4rem,4.9vw,2.9rem);
+    font-size:clamp(1.3rem,2.6vw,1.9rem);
     letter-spacing:0.06em;color:var(--paper);
     text-align:center;pointer-events:none;
     text-shadow:0 2px 10px rgba(0,0,0,0.25);
@@ -203,19 +236,14 @@
     padding:9px 18px;border:1px solid var(--line);border-radius:20px;
     background:transparent;color:var(--ink);cursor:pointer;
     letter-spacing:0.02em;white-space:nowrap;
-    transition:background .22s ease, color .22s ease, border-color .22s ease, transform .15s ease;
+    transition:all .2s ease;
   }
   .cat-pill:hover{border-color:var(--ink);}
-  .cat-pill:active{transform:scale(.95);}
   .cat-pill.active{background:var(--ink);color:var(--paper);border-color:var(--ink);}
 
   /* ---------- PRODUCT GRID ---------- */
   .grid{
     display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;
-    transition:opacity .28s ease, transform .28s ease;
-  }
-  .grid.grid-fade{
-    opacity:0;transform:translateY(8px);
   }
   @media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr);}}
   @media(max-width:600px){.grid{grid-template-columns:1fr;}}
@@ -223,20 +251,9 @@
   .card{
     position:relative;background:var(--paper-2);
     border:1px solid var(--line);border-radius:3px;
-    overflow:hidden;
-    transition:box-shadow .25s ease;
-    animation:cardIn .5s cubic-bezier(.2,.8,.2,1) both;
-    animation-delay:var(--card-delay,0s);
+    overflow:hidden;transition:box-shadow .25s ease;
   }
   .card:hover{box-shadow:0 12px 28px rgba(23,23,19,0.1);}
-  @keyframes cardIn{
-    from{opacity:0;transform:translateY(16px) scale(.98);}
-    to{opacity:1;transform:translateY(0) scale(1);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .card{animation:none;}
-    .grid{transition:none;}
-  }
   .swatch{
     position:relative;aspect-ratio:4/5;
     display:flex;align-items:flex-end;
@@ -436,7 +453,7 @@
 <section class="hero">
   <div class="hero-copy">
     <span class="eyebrow">Koleksi — Fashion terbaru</span>
-    <h1>Local Brand International Quality</h1>
+    <h1>Local brand international quality</h1>
     <p>Menemani kegiatanmu dengan gaya yang unik dan nyaman.</p>
     <div class="hero-cta">
       <button class="btn-primary" onclick="document.getElementById('koleksi').scrollIntoView({behavior:'smooth'})">Lihat Koleksi</button>
@@ -469,19 +486,19 @@
   </div>
   <div class="usp-item">
     <svg viewBox="0 0 24 24" fill="none" stroke="#171713" stroke-width="1.4"><path d="M4 4v6h6"/><path d="M20 20v-6h-6"/><path d="M20 10a8 8 0 0 0-14.6-4.6M4 14a8 8 0 0 0 14.6 4.6"/></svg>
-    <h3>Tukar 7 Hari</h3>
+    <h3>Tukar 14 Hari</h3>
     <p>Ukuran kurang pas? Tukar gratis tanpa banyak tanya.</p>
   </div>
   <div class="usp-item">
     <svg viewBox="0 0 24 24" fill="none" stroke="#171713" stroke-width="1.4"><path d="M12 3v18M5 8l7-5 7 5M5 8v9l7 5 7-5V8"/></svg>
     <h3>Bahan Pilihan</h3>
-    <p>Kami menjaga kualitas bahan yang digunakan dalam setiap produk kami.</p>
+    <p>Katun rajut, linen, dan denim dari pemasok lokal terpercaya.</p>
   </div>
 </div>
 
 <section class="section" id="marketplace">
   <div class="section-head">
-    <h2>Belanja Juga Lewat Marketplace Selalu Ada Diskon</h2>
+    <h2>Belanja Juga Lewat Marketplace</h2>
     <span class="tag">Pilih Kanal Favoritmu</span>
   </div>
   <div class="market-grid">
@@ -490,7 +507,7 @@
       <div class="market-body">
         <h4>Shopee</h4>
         <p>Belanja cepat dengan gratis ongkir dan promo mingguan langsung dari toko resmi FREAKSIDE.</p>
-        <a class="market-link" href="https://shopee.co.id/freaksidestore?entryPoint=ShopBySearch&searchKeyword=freakside" target="_blank" rel="noopener">Kunjungi Toko →</a>
+        <a class="market-link" href="#" target="_blank" rel="noopener">Kunjungi Toko →</a>
       </div>
     </div>
     <div class="market-card">
@@ -498,7 +515,7 @@
       <div class="market-body">
         <h4>Tokopedia</h4>
         <p>Transaksi aman dengan berbagai metode pembayaran dan pengiriman ke seluruh Indonesia.</p>
-        <a class="market-link" href="https://www.tokopedia.com/freaksideofficial" target="_blank" rel="noopener">Kunjungi Toko →</a>
+        <a class="market-link" href="#" target="_blank" rel="noopener">Kunjungi Toko →</a>
       </div>
     </div>
     <div class="market-card">
@@ -506,7 +523,7 @@
       <div class="market-body">
         <h4>TikTok Shop</h4>
         <p>Lihat video produk, live shopping, dan checkout langsung tanpa keluar aplikasi.</p>
-        <a class="market-link" href="https://www.tiktok.com/@freaksideofficial53" target="_blank" rel="noopener">Kunjungi Toko →</a>
+        <a class="market-link" href="#" target="_blank" rel="noopener">Kunjungi Toko →</a>
       </div>
     </div>
   </div>
@@ -532,8 +549,8 @@
   </div>
   <div class="col">
     <h5>Bantuan</h5>
-    <a href="#kontak">Panduan Ukuran</a>
-    <a href="#kontak">Pengiriman & Retur</a>
+    <a href="#">Panduan Ukuran</a>
+    <a href="#">Pengiriman & Retur</a>
     <a href="#kontak">Hubungi Kami</a>
   </div>
   <div class="col">
@@ -543,8 +560,8 @@
     <a href="#kontak">WhatsApp</a>
   </div>
   <div class="bottom">
-    <span>© 2024 FREAKSIDE - Suported by Zey's official group.</span>
-    <span class="mono">BDG / ID</span>
+    <span>© 2026 FREAKSIDE. Local brand international quality.</span>
+    <span class="mono">JKT / ID</span>
   </div>
 </footer>
 
@@ -567,7 +584,7 @@
 // 1) NOMOR WHATSAPP TOKO
 //    Ganti dengan nomor WhatsApp Anda, format: 62xxxxxxxxxxx
 //    (diawali 62, TANPA tanda + dan TANPA angka 0 di depan)
-const WHATSAPP_NUMBER = "6281930568566";
+const WHATSAPP_NUMBER = "6281234567890";
 
 // 2) MEMASUKKAN FOTO PRODUK
 //    Cari nama produk di daftar "products" di bawah ini (pakai Ctrl+F),
@@ -578,68 +595,125 @@ const WHATSAPP_NUMBER = "6281930568566";
 //    Rasio foto yang disarankan: potret / 4:5.
 
 const products = [
-  // ================= JAKET PARASUT =================
-  {id:1,  category:"JAKET PARASUT", name:"TRACKLIST LINEA LYTE",           price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7r98y-lxrx7er6sj7212.JPG"},
-  {id:2,  category:"JAKET PARASUT", name:"TRACKTOP WINDBREAKER",         price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7r991-lxubmdh69vlaa6@resize_w450_nl.webp"},
-  {id:3,  category:"JAKET PARASUT", name:"VINTAGE LINEA LINER",      price:190000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224q-mi43gdm6myv42c.webp"},
-  {id:4,  category:"JAKET PARASUT", name:"WINDBREAKER SPORT",    price:375000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224r-mgvu7so6fzm76d.webp"},
-  {id:5,  category:"JAKET PARASUT", name:"TRACKTOP LIST",        price:175000, image:"https://down-id.img.susercontent.com/file/id-11134207-81ztj-mqt2e0henlsecc.webp"},
-  {id:6,  category:"JAKET PARASUT", name:"LINEALINER",        price:190000, image:"https://down-id.img.susercontent.com/file/id-11134207-7rasm-m2u2531ylu4jb9.webp"},
+  // ================= KAOS =================
+  {id:1,  category:"Kaos", name:"KAOS BASIC INK",           price:129000, image:""},
+  {id:2,  category:"Kaos", name:"KAOS BASIC STONE",         price:129000, image:""},
+  {id:3,  category:"Kaos", name:"KAOS OVERSIZED CLAY",      price:149000, image:""},
+  {id:4,  category:"Kaos", name:"KAOS OVERSIZED INDIGO",    price:149000, image:""},
+  {id:5,  category:"Kaos", name:"KAOS POCKET OLIVE",        price:139000, image:""},
+  {id:6,  category:"Kaos", name:"KAOS POCKET CREAM",        price:139000, image:""},
+  {id:7,  category:"Kaos", name:"KAOS WASHED RUST",         price:159000, image:""},
+  {id:8,  category:"Kaos", name:"KAOS WASHED CHARCOAL",     price:159000, image:""},
+  {id:9,  category:"Kaos", name:"KAOS GRAPHIC SAND",        price:169000, image:""},
+  {id:10, category:"Kaos", name:"KAOS GRAPHIC MOSS",        price:169000, image:""},
 
+  // ================= KEMEJA =================
+  {id:11, category:"Kemeja", name:"KEMEJA FLANNEL CHECK",     price:259000, image:""},
+  {id:12, category:"Kemeja", name:"KEMEJA OXFORD STONE",      price:249000, image:""},
+  {id:13, category:"Kemeja", name:"KEMEJA LINEN SAND",        price:269000, image:""},
+  {id:14, category:"Kemeja", name:"KEMEJA DENIM INDIGO",      price:289000, image:""},
+  {id:15, category:"Kemeja", name:"KEMEJA CORDUROY CLAY",     price:299000, image:""},
+  {id:16, category:"Kemeja", name:"KEMEJA TWILL OLIVE",       price:279000, image:""},
+  {id:17, category:"Kemeja", name:"KEMEJA POPLIN CREAM",      price:239000, image:""},
+  {id:18, category:"Kemeja", name:"KEMEJA SEERSUCKER INK",    price:259000, image:""},
+  {id:19, category:"Kemeja", name:"KEMEJA CHAMBRAY BLUE",     price:269000, image:""},
+  {id:20, category:"Kemeja", name:"KEMEJA WORKSHIRT CHARCOAL",price:299000, image:""},
 
-  // ================= BOMBER =================
-  {id:11, category:"BOMBER", name:"BOMBER ABU ABU",     price:300000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mbo5fjyeg52l00@resize_w450_nl.webp"},
-  {id:12, category:"BOMBER", name:"BOMBER CREAM",      price:300000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mbozydhau9hs0f@resize_w450_nl.webp"},
-  {id:13, category:"BOMBER", name:"BOMBER HITAM",        price:300000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0n-mbo5ls6oid7b84.webp"},
-  {id:14, category:"BOMBER", name:"BOMBER GOLD",      price:300000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0h-mbo5ls6ofk2f1c.webp"},
-  {id:15, category:"BOMBER", name:"BOMBER ARMY",     price:300000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0p-mbo5ls6ocqxj11.webp"},
- 
-  
   // ================= HOODIE =================
-  {id:21, category:"HOODIE", name:"HITAM",       price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0s-mbo569o7o4h94c@resize_w450_nl.JPG"},
-  {id:22, category:"HOODIE", name:"NAVY",       price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mbo4u1fzyvnqbf@resize_w450_nl.webp"},
-  {id:23, category:"HOODIE", name:"PUTIH",     price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mbo569o7lbcde8@resize_w450_nl.webp"},
-  {id:24, category:"HOODIE", name:"CREAM",     price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0l-mbo4c6vieox948@resize_w450_nl.webp"},
-  {id:25, category:"HOODIE", name:"HIJAU SAGE",  price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0k-mbo4iw62wvpva2@resize_w450_nl.webp"},
-  {id:26, category:"HOODIE", name:"CHEESE CREAM",        price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mbo4qb7o4k2b3a@resize_w450_nl.webp"},
-  {id:27, category:"HOODIE", name:"MYST",     price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mbo569o7sc6l29@resize_w450_nl.webp"},
-  {id:28, category:"HOODIE", name:"MINT",     price:165000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mbo569o7tqr1bb@resize_w450_nl.webp"},
- 
-  // ================= MESH HOODIE =================
-  {id:31, category:"MESH HOODIE", name:"LIGHT GRAY",         price:145000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224w-mgmduoab9dl48b@resize_w450_nl.webp"},
-  {id:32, category:"MESH HOODIE", name:"VIOLET",     price:145000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224r-mgmduoabas5k5d@resize_w450_nl.webp"},
-  {id:33, category:"MESH HOODIE", name:"OLIVE",      price:145000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224t-mgmduoaexez2d8.webp"},
-  {id:34, category:"MESH HOODIE", name:"BLUE ICE",    price:145000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224q-mgmduoabdlag21@resize_w450_nl.webp"},
-  {id:35, category:"MESH HOODIE", name:"NAVY",price:145000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224p-mgmduoabezuw20@resize_w450_nl.webp"},
-  
-  // ================= COUGLE ANORAK =================
-  {id:41, category:"COUGLE ANORAK", name:"BLACK",   price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mbnp449xbkx907.webp"},
-  {id:42, category:"COUGLE ANORAK", name:"WHITE",      price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mbnp449xo8196d@resize_w450_nl.webp"},
-  {id:43, category:"COUGLE ANORAK", name:"GRAY",      price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0q-mbnp449xpmlp75@resize_w450_nl.webp"},
-  {id:44, category:"COUGLE ANORAK", name:"BROWN",        price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0m-mbnp449xilrh91@resize_w450_nl.webp"},
-  {id:45, category:"COUGLE ANORAK", name:"PETROL",     price:275000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0u-mbo246crmgswd9@resize_w450_nl.webp"},
-  
-  // ================= BOMBER PARACUTE =================
-  {id:51, category:"BOMBER PARACUTE", name:"WHITE",   price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mbp0dgxbovd296.webp"},
-  {id:52, category:"BOMBER PARACUTE", name:"BLACK",      price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0m-mbp0sg82dk7k2a@resize_w450_nl.webp"},
-  {id:53, category:"BOMBER PARACUTE", name:"GRAY",      price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0m-mbp0sg82gdcgcc@resize_w450_nl.webp"},
-  {id:54, category:"BOMBER PARACUTE", name:"CREAM",        price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mbp0sg82c5n489.webp"},
-  {id:55, category:"BOMBER PARACUTE", name:"PETROL",     price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0j-mbp0sg829ci839@resize_w450_nl.webp"},
-  {id:56, category:"BOMBER PARACUTE", name:"ARMY",     price:250000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0n-mbp0sg82j6hc07@resize_w450_nl.webp"},
+  {id:21, category:"Hoodie", name:"HOODIE PULLOVER INK",       price:279000, image:""},
+  {id:22, category:"Hoodie", name:"HOODIE ZIP-UP STONE",       price:299000, image:""},
+  {id:23, category:"Hoodie", name:"HOODIE OVERSIZED CLAY",     price:309000, image:""},
+  {id:24, category:"Hoodie", name:"HOODIE CROPPED INDIGO",     price:289000, image:""},
+  {id:25, category:"Hoodie", name:"HOODIE HEAVYWEIGHT OLIVE",  price:349000, image:""},
+  {id:26, category:"Hoodie", name:"HOODIE WASHED RUST",        price:329000, image:""},
+  {id:27, category:"Hoodie", name:"HOODIE BOXY CHARCOAL",      price:319000, image:""},
+  {id:28, category:"Hoodie", name:"HOODIE GRAPHIC SAND",       price:339000, image:""},
+  {id:29, category:"Hoodie", name:"HOODIE TIE-DYE MOSS",       price:359000, image:""},
+  {id:30, category:"Hoodie", name:"HOODIE BASIC CREAM",        price:269000, image:""},
 
-  // ================= RUGBY =================
-  {id:61, category:"RUGBY", name:"BLACK X WHITE",   price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224z-mk6ygf6c9dds9a@resize_w450_nl.webp"},
-  {id:62, category:"RUGBY", name:"BLACK X BEIGE",      price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-82252-mk6ygf6cary823@resize_w450_nl.webp"},
-  {id:63, category:"RUGBY", name:"ARMY X CREAM",      price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224t-mk6ygf6cc6io9e@resize_w450_nl.webp"},
-  {id:64, category:"RUGBY", name:"DENIM X CHEESE",        price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-82252-mk6ygf6cdl349e@resize_w450_nl.webp"},
-  {id:65, category:"RUGBY", name:"BEIGE X BLACK",     price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-8224q-mk6ygf6ceznk66@resize_w450_nl.webp"},
+  // ================= SWEATER =================
+  {id:31, category:"Sweater", name:"SWEATER KNIT INK",         price:249000, image:""},
+  {id:32, category:"Sweater", name:"SWEATER FLEECE STONE",     price:259000, image:""},
+  {id:33, category:"Sweater", name:"SWEATER WAFFLE CLAY",      price:269000, image:""},
+  {id:34, category:"Sweater", name:"SWEATER RIBBED INDIGO",    price:279000, image:""},
+  {id:35, category:"Sweater", name:"SWEATER FRENCH TERRY OLIVE",price:259000, image:""},
+  {id:36, category:"Sweater", name:"SWEATER MELANGE CHARCOAL", price:289000, image:""},
+  {id:37, category:"Sweater", name:"SWEATER VARSITY CREAM",    price:299000, image:""},
+  {id:38, category:"Sweater", name:"SWEATER CABLE KNIT RUST",  price:309000, image:""},
+  {id:39, category:"Sweater", name:"SWEATER HALF-ZIP SAND",    price:279000, image:""},
+  {id:40, category:"Sweater", name:"CREWNECK BASIC MOSS",      price:229000, image:""},
 
-  // ================= RUGBY STRIPE =================
-  {id:71, category:"RUGBY STRIPE", name:"CREAM ON BLACK",   price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0t-mbnovdgcc5g3bb@resize_w450_nl.webp"},
-  {id:72, category:"RUGBY STRIPE", name:"BLACK ON BULGUNDRY",      price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0k-mbnovdgc3q1ff9@resize_w450_nl.webp"},
-  {id:73, category:"RUGBY STRIPE", name:"CHEESE ON DENIM",      price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0q-mbnovdgc54lve6@resize_w450_nl.webp"},
-  {id:74, category:"RUGBY STRIPE", name:"BULGUNDRY ON BLACK",        price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0o-mbnovdgceykz1c@resize_w450_nl.webp"},
-  {id:75, category:"RUGBY STRIPE", name:"CHEESE ON DENIM",     price:200000, image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0q-mbnovdgc54lve6@resize_w450_nl.webp"},
+  // ================= JAKET =================
+  {id:41, category:"Jaket", name:"JAKET WINDBREAKER INK",   price:349000, image:""},
+  {id:42, category:"Jaket", name:"JAKET BOMBER STONE",      price:399000, image:""},
+  {id:43, category:"Jaket", name:"JAKET DENIM INDIGO",      price:429000, image:""},
+  {id:44, category:"Jaket", name:"JAKET COACH CLAY",        price:379000, image:""},
+  {id:45, category:"Jaket", name:"JAKET TRUCKER OLIVE",     price:389000, image:""},
+  {id:46, category:"Jaket", name:"JAKET VARSITY CHARCOAL",  price:459000, image:""},
+  {id:47, category:"Jaket", name:"JAKET PUFFER CREAM",      price:599000, image:""},
+  {id:48, category:"Jaket", name:"JAKET PARKA SAND",        price:549000, image:""},
+  {id:49, category:"Jaket", name:"JAKET HARRINGTON RUST",   price:419000, image:""},
+  {id:50, category:"Jaket", name:"VEST UTILITY MOSS",       price:359000, image:""},
+
+  // ================= CELANA PANJANG =================
+  {id:51, category:"Celana Panjang", name:"CELANA CARGO INK",       price:279000, image:""},
+  {id:52, category:"Celana Panjang", name:"CELANA JOGGER STONE",    price:259000, image:""},
+  {id:53, category:"Celana Panjang", name:"CELANA DENIM INDIGO",    price:329000, image:""},
+  {id:54, category:"Celana Panjang", name:"CELANA CHINO CLAY",      price:269000, image:""},
+  {id:55, category:"Celana Panjang", name:"CELANA TRACK OLIVE",     price:249000, image:""},
+  {id:56, category:"Celana Panjang", name:"CELANA WIDE-LEG CHARCOAL",price:289000, image:""},
+  {id:57, category:"Celana Panjang", name:"CELANA CORDUROY CREAM",  price:299000, image:""},
+  {id:58, category:"Celana Panjang", name:"CELANA PARASUT SAND",    price:259000, image:""},
+  {id:59, category:"Celana Panjang", name:"CELANA TAPERED RUST",    price:279000, image:""},
+  {id:60, category:"Celana Panjang", name:"CELANA BAGGY MOSS",      price:289000, image:""},
+
+  // ================= CELANA PENDEK =================
+  {id:61, category:"Celana Pendek", name:"CELANA PENDEK CARGO INK",       price:189000, image:""},
+  {id:62, category:"Celana Pendek", name:"CELANA PENDEK BASIC STONE",     price:149000, image:""},
+  {id:63, category:"Celana Pendek", name:"CELANA PENDEK DENIM INDIGO",    price:199000, image:""},
+  {id:64, category:"Celana Pendek", name:"CELANA PENDEK TRACK CLAY",      price:169000, image:""},
+  {id:65, category:"Celana Pendek", name:"CELANA PENDEK CHINO OLIVE",     price:179000, image:""},
+  {id:66, category:"Celana Pendek", name:"CELANA PENDEK SWEAT CHARCOAL",  price:159000, image:""},
+  {id:67, category:"Celana Pendek", name:"CELANA PENDEK UTILITY CREAM",   price:189000, image:""},
+  {id:68, category:"Celana Pendek", name:"CELANA PENDEK MESH SAND",       price:139000, image:""},
+  {id:69, category:"Celana Pendek", name:"CELANA PENDEK BOARDSHORT RUST", price:199000, image:""},
+  {id:70, category:"Celana Pendek", name:"CELANA PENDEK NYLON MOSS",      price:179000, image:""},
+
+  // ================= TOPI =================
+  {id:71, category:"Topi", name:"BUCKET HAT INK",       price:99000,  image:""},
+  {id:72, category:"Topi", name:"TRUCKER CAP STONE",    price:109000, image:""},
+  {id:73, category:"Topi", name:"DAD HAT INDIGO",       price:99000,  image:""},
+  {id:74, category:"Topi", name:"BEANIE CLAY",          price:89000,  image:""},
+  {id:75, category:"Topi", name:"SNAPBACK OLIVE",       price:119000, image:""},
+  {id:76, category:"Topi", name:"CAP 6-PANEL CHARCOAL", price:109000, image:""},
+  {id:77, category:"Topi", name:"VISOR CREAM",          price:79000,  image:""},
+  {id:78, category:"Topi", name:"BASEBALL CAP SAND",    price:99000,  image:""},
+  {id:79, category:"Topi", name:"CORDUROY CAP RUST",    price:129000, image:""},
+  {id:80, category:"Topi", name:"WASHED CAP MOSS",      price:119000, image:""},
+
+  // ================= TAS =================
+  {id:81, category:"Tas", name:"TOTE BAG INK",         price:149000, image:""},
+  {id:82, category:"Tas", name:"SLING BAG STONE",      price:199000, image:""},
+  {id:83, category:"Tas", name:"BACKPACK INDIGO",      price:329000, image:""},
+  {id:84, category:"Tas", name:"POUCH CLAY",           price:89000,  image:""},
+  {id:85, category:"Tas", name:"CROSSBODY BAG OLIVE",  price:219000, image:""},
+  {id:86, category:"Tas", name:"DRAWSTRING BAG CHARCOAL",price:99000,image:""},
+  {id:87, category:"Tas", name:"WAIST BAG CREAM",      price:159000, image:""},
+  {id:88, category:"Tas", name:"DUFFEL BAG SAND",      price:299000, image:""},
+  {id:89, category:"Tas", name:"LAPTOP SLEEVE RUST",   price:179000, image:""},
+  {id:90, category:"Tas", name:"CANVAS BAG MOSS",      price:139000, image:""},
+
+  // ================= AKSESORIS =================
+  {id:91,  category:"Aksesoris", name:"KAOS KAKI INK",       price:39000,  image:""},
+  {id:92,  category:"Aksesoris", name:"IKAT PINGGANG STONE", price:99000,  image:""},
+  {id:93,  category:"Aksesoris", name:"DOMPET INDIGO",       price:129000, image:""},
+  {id:94,  category:"Aksesoris", name:"GELANG CLAY",         price:49000,  image:""},
+  {id:95,  category:"Aksesoris", name:"KALUNG OLIVE",        price:69000,  image:""},
+  {id:96,  category:"Aksesoris", name:"MASKER CHARCOAL",     price:45000,  image:""},
+  {id:97,  category:"Aksesoris", name:"SARUNG TANGAN CREAM", price:59000,  image:""},
+  {id:98,  category:"Aksesoris", name:"SYAL SAND",           price:89000,  image:""},
+  {id:99,  category:"Aksesoris", name:"PIN ENAMEL RUST",     price:35000,  image:""},
+  {id:100, category:"Aksesoris", name:"KEYCHAIN MOSS",       price:39000,  image:""},
 ];
 
 /* =====================================================================
@@ -669,7 +743,7 @@ function formatRupiah(n){
 }
 
 function waLink(text){
-  return `https://wa.me/${+6281930568566}?text=${encodeURIComponent(text)}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 }
 
 // Susun daftar kategori otomatis dari data produk (urutan kemunculan pertama)
@@ -686,25 +760,24 @@ categoryOrder.forEach((cat, i)=>{
 });
 
 let activeCat = categoryOrder[0];
-let isTransitioning = false;
-
 filterWrap.addEventListener('click', (e)=>{
   const btn = e.target.closest('.cat-pill');
-  if(!btn || isTransitioning) return;
-  if(btn.dataset.cat === activeCat) return;
+  if(!btn) return;
   activeCat = btn.dataset.cat;
   filterWrap.querySelectorAll('.cat-pill').forEach(p=>p.classList.toggle('active', p===btn));
-  renderGrid(true);
+  renderGrid();
 });
 
-function buildCardsHTML(list){
-  return list.map((p, idx)=>{
+function renderGrid(){
+  const grid = document.getElementById('productGrid');
+  const list = products.filter(p=>p.category===activeCat);
+  document.getElementById('gridCount').textContent = list.length + ' Produk';
+  grid.innerHTML = list.map((p, idx)=>{
     const color = getColor(p.id - 1);
     const pattern = getPattern(p.id - 1);
     const msg = `Halo FREAKSIDE, saya tertarik dengan produk ${p.name} (${formatRupiah(p.price)}). Apakah masih tersedia?`;
-    const delay = Math.min(idx * 0.05, 0.4);
     return `
-    <div class="card" data-id="${p.id}" style="--card-delay:${delay}s">
+    <div class="card" data-id="${p.id}">
       <div class="swatch" style="background:${color}">
         ${p.image ? `<img src="${p.image}" alt="${p.name}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">` : patternSVG(pattern,color)}
         <div class="fold-corner"></div>
@@ -719,30 +792,6 @@ function buildCardsHTML(list){
       </div>
     </div>`;
   }).join('');
-}
-
-function renderGrid(withTransition){
-  const grid = document.getElementById('productGrid');
-  const list = products.filter(p=>p.category===activeCat);
-
-  const paint = ()=>{
-    document.getElementById('gridCount').textContent = list.length + ' Produk';
-    grid.innerHTML = buildCardsHTML(list);
-    if(withTransition){
-      // force reflow so the fade-in transition actually plays
-      void grid.offsetWidth;
-      grid.classList.remove('grid-fade');
-    }
-    isTransitioning = false;
-  };
-
-  if(withTransition){
-    isTransitioning = true;
-    grid.classList.add('grid-fade');
-    setTimeout(paint, 220);
-  }else{
-    paint();
-  }
 }
 renderGrid();
 
